@@ -1,0 +1,569 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.TopNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.bars {
+  width: 20px;
+  height: 2px;
+  background-color: #262626;
+  margin: 5px;
+}
+
+.Toggle {
+  display: none;
+  margin: auto;
+}
+
+.SupportSection,
+.user,
+.LogoSection {
+  display: flex;
+}
+
+.SupportSection div {
+  padding: 5px 20px;
+  text-align: center;
+  color: #647787;
+}
+
+.LogoSection div {
+  color: #0e1d25;
+  padding: 5px 50px 5px 20px;
+  text-align: center;
+  margin: auto 0;
+}
+
+.logo h4 {
+  color: #1875f0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 20px;
+  /* padding: 5px; */
+  /* margin: 5px; */
+}
+
+.search input {
+  border: none;
+  padding: 0 15px;
+  color: #979797;
+  background-color: transparent;
+}
+
+.search input:focus {
+  border-bottom: 1px solid #f1f1f1;
+  outline: none;
+}
+
+.Support {
+  padding: 20px 0;
+  margin: auto 0;
+}
+
+.user div {
+  text-align: right;
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #647787;
+}
+
+.user p {
+  margin-bottom: 0px;
+}
+
+.user h6 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.user img {
+  border-radius: 50%;
+}
+
+/* Side Nav Styling */
+.sideNav {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  z-index: -1;
+  height: 100%;
+  width: 250px;
+  padding: 0px;
+  color: #647787;
+}
+
+.Button button {
+  background-color: #27ae60;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  color: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+
+.Button button:focus {
+  outline: none;
+}
+
+.Choice h4,
+.Choice p {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+/* .Choice p:hover {
+  background-color: #c2d9f7;
+  padding: 10px 0;
+} */
+
+.Choice img {
+  padding-right: 10px;
+}
+
+.Main,
+.Payment,
+.Orders {
+  padding: 25px 0px 0 0px;
+}
+
+.Main p {
+  background-color: #c2d9f7;
+  border-left: 3px solid #1875f0;
+  padding: 10px 0;
+}
+
+/* .Main p:hover,
+.Payment p:hover,
+.Orders p:hover {
+  background-color: #c2d9f7;
+  padding: 10px 0;
+} */
+
+.Main h4,
+.Main p,
+.Payment h4,
+.Payment p,
+.Orders h4,
+.Orders p {
+  padding-left: 40px;
+}
+
+.Payment,
+.Orders {
+  padding-top: 8px;
+}
+
+/* Transaction Body */
+.TransactionBody {
+  background-color: #f4f4f4;
+  width: 90%;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  z-index: -1;
+  padding: 30px 100px 30px 40px;
+}
+
+/* Daily transaction section */
+.TransactionDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.DailyWrapper,
+.TotalWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: fit-content;
+  margin: 10px 20px 10px 10px;
+}
+
+.Daily,
+.Total {
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #eef8fd;
+  display: flex;
+}
+
+.Daily img,
+.Total img {
+  padding-left: 15px;
+}
+
+.Daily p,
+.Total p {
+  padding-bottom: 0;
+}
+
+.Daily p:nth-child(1),
+.Total p:nth-child(1) {
+  font-size: 12px;
+  line-height: 16px;
+  color: #787c90;
+}
+
+.Daily p:nth-child(2),
+.Total p:nth-child(2) {
+  font-size: 18px;
+  line-height: 2px;
+  color: #262626;
+}
+
+/* Graph Section */
+.graphShow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 10px 10px 10px;
+  margin: 10px;
+}
+
+.graphShow > div {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #eef8fd;
+}
+
+.Month {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.progressInner {
+  padding: 30px 20px 10px 20px;
+  border-left: 4px solid #f7f8fa;
+}
+
+.progressInner:nth-child(1) {
+  border-bottom: 4px solid #f7f8fa;
+}
+
+.progressInner h5,
+.progressInner p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
+}
+
+.Date {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.DateButton {
+  display: flex;
+}
+
+.DateButton div {
+  padding-left: 20px;
+}
+
+.DateButton button {
+  border: 1px solid #dde0e3;
+  border-radius: 4.25px;
+  padding: 5px 10px;
+}
+
+.DateButton > div button {
+  background-color: transparent;
+  color: #7f8fa4;
+}
+
+.arrow button {
+  margin: 0 5px;
+  color: #cccfd4;
+}
+
+.prog {
+  padding-bottom: 8px;
+}
+
+.leftover {
+  color: #fdc203;
+}
+
+.done {
+  color: #27ae60;
+}
+
+/* Payment section */
+.PaymentWrapper h3 {
+  font-size: 36px;
+  line-height: 48px;
+  color: #262626;
+}
+
+.PaymentOutline {
+  display: flex;
+  justify-content: stretch;
+  padding: 20px 5px;
+}
+
+.PaymentOutline p {
+  padding-right: 20px;
+}
+
+.PaymentOutline p span {
+  color: #1875f0;
+}
+
+.PaymentOutline .search {
+  padding-left: 23px;
+}
+
+.PaymentOutline .search input {
+  border-bottom: 0.5px solid #787878;
+}
+
+.shownum {
+  padding: 0 15px 0 20px;
+}
+
+.show {
+  display: flex;
+  justify-content: right;
+  padding-left: 150px;
+}
+
+.show select {
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+  padding: 6px 20px;
+  background-color: #f4f4f4;
+  color: #414042;
+}
+
+.show select:focus {
+  outline: none;
+}
+
+.itemHead {
+  background-color: #eaeef0;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.itemBody {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #cccfd4;
+}
+
+.itemBody > div {
+  margin: auto;
+}
+
+.item {
+  padding: 20px 5px 5px 5px;
+}
+
+.item p {
+  color: #7f8fa4;
+}
+
+.itemHead .type {
+  padding-left: 50px;
+}
+
+.itemHead .price {
+  padding-left: 280px;
+}
+
+.itemHead .transact {
+  padding-left: 90px;
+}
+
+.itemHead .time {
+  padding-left: 50px;
+}
+
+.itemHead .status {
+  padding-left: 100px;
+}
+
+.select {
+  border-radius: 60px;
+  padding: 8px 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: auto 10px auto 0;
+}
+
+.straight,
+.reco,
+.pend,
+.unreco {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reco,
+.pend,
+.unreco {
+  border: 1px solid #cccfd4;
+  border-radius: 30px;
+  padding: 5px 10px;
+  width: 170px;
+}
+
+.icon {
+  margin: auto 0 auto 20px;
+  color: #cccfd4;
+}
+
+.rec {
+  color: #27ae60;
+  margin-right: 10px;
+}
+.reco .dot {
+  background-color: #27ae60;
+}
+.pen {
+  margin-left: -20px;
+}
+
+.pend {
+  color: #ebc315;
+  margin-right: 5px;
+}
+.pend .dot {
+  background-color: #ebc315;
+  margin-left: -10px;
+}
+
+.unrec {
+  color: #7f8fa4;
+  margin-right: 10px;
+}
+.unreco .dot {
+  background-color: #7f8fa4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.foot2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot2 p {
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.foot2 p:nth-child(2) {
+  background-color: #1875f0;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 968px) {
+  .sideNav {
+    display: none;
+  }
+
+  .TransactionBody {
+    width: 100%;
+    left: 0;
+  }
+
+  .TransactionDetails {
+    display: block;
+  }
+
+  .DailyWrapper,
+  .TotalWrapper {
+    width: max-content;
+    margin: auto;
+  }
+
+  .Daily,
+  .Total {
+    display: block;
+    text-align: center;
+  }
+
+  .graphShow {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .graph {
+    width: 70%;
+    display: none;
+  }
+
+  .Payment,
+  .itemHead,
+  .itemBody,
+  .Date,
+  .Month,
+  .search,
+  .Support,
+  .user .name {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .Toggle {
+    display: block;
+  }
+}
+
+/* @media screen and (max-width: 886px) {
+  .search,
+  .Support,
+  .user .name {
+    display: none;
+  }
+} */
