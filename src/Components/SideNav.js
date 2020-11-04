@@ -3,7 +3,7 @@ import React from 'react'
 
 const SideNav = () => {
     return (
-        <div className='sideNav'>
+        <div className='sideNav' >
             <div className='Button'>
                 <button>GENERATE INVOICE</button>
             </div>
