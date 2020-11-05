@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faBell} from '@fortawesome/free-regular-svg-icons'
-import sideNav from './SideNav'
+import SideNavigation from './SideNav'
 import Toggleicon from './Toggleicon'
 
 const TopNav = () => {
@@ -12,8 +12,8 @@ const TopNav = () => {
     let menu;
 
     if(SideNav){
-        menu = <div>
-            <sideNav/>
+        menu = <div className='showToggle'>
+            <SideNavigation/>
         </div>
     }
     return (
@@ -48,9 +48,13 @@ const TopNav = () => {
                     <div onClick={() => setSideNav(!SideNav)}>
                         <Toggleicon/>
                     </div>
+                    
+                    
+                    
                 </div>
-                
+                {menu}
             </div>
+            
         </div>
     )
 }
