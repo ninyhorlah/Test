@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Chart from './Chart';
 
 const DailyTransaction = () => {
     return (
@@ -19,7 +20,7 @@ const DailyTransaction = () => {
                         <p>&#x20A6; 4,000,000</p>
                     </div>
                     <div>
-                        <img src="/assets/smallChart.svg" alt=""/>
+                        <Chart/>
                     </div>
                 </div>
             </div>

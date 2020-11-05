@@ -202,7 +202,6 @@ body {
 .TotalWrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: fit-content;
   margin: 10px 20px 10px 10px;
 }
 
@@ -214,10 +213,12 @@ body {
   border-radius: 2px;
   border: 1px solid #eef8fd;
   display: flex;
+  height: 75px;
 }
 
 .Daily img,
-.Total img {
+.Total img,
+.chartJs {
   padding-left: 15px;
 }
 
