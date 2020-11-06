@@ -316,6 +316,10 @@ body {
   color: #27ae60;
 }
 
+.tot {
+  color: #1875f0;
+}
+
 /* Payment section */
 .PaymentWrapper h3 {
   font-size: 36px;
@@ -575,3 +579,27 @@ body {
     display: none;
   }
 } */
+
+@media screen and (max-width: 1176px) {
+  .itemHead .price {
+    padding-left: 240px;
+  }
+  .itemHead .transact {
+    padding-left: 65px;
+  }
+  .itemHead .time {
+    padding-left: 35px;
+  }
+  .PaymentOutline p {
+    padding-right: 5px;
+  }
+  .Payment p {
+    padding-left: 10px;
+  }
+  .show {
+    padding-left: 120px;
+  }
+  .PaymentOutline .search {
+    padding-left: 43px;
+  }
+}

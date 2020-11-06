@@ -45,7 +45,7 @@ const Graph = () => {
                     </div>
                     <p>Pending Orders: <span className="leftover">20</span></p>
                     <p>Reconciled Orders: <span className="done">80</span></p>
-                    <p>Total Orders: 100</p>
+                    <p>Total Orders: <span className="tot">100</span></p>
                 </div>
                 <div className='progressInner'>
                     <h5>Payments</h5>
@@ -54,7 +54,7 @@ const Graph = () => {
                     </div>
                     <p>Pending Payments: <span className="leftover">20</span></p>
                     <p>Reconciled Payments: <span className="done">80</span></p>
-                    <p>Total Payments: 100</p>
+                    <p>Total Payments: <span className="tot">100</span></p>
                 </div>
             </div>
         </div>
