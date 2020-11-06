@@ -4,6 +4,7 @@ import Payments from './Payment'
 import Graph from './Graph'
 import Footer from './Footer'
 
+
 const Transaction = () => {
     return (
         <div className='TransactionBody'>

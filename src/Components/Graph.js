@@ -5,6 +5,8 @@ import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons'
 // import ProgressBar from 'react-bootstrap/ProgressBar'
 import Progress from './Progress'
+import Bigchart from './Bigchart';
+
 
 const Graph = () => {
     
@@ -29,16 +31,10 @@ const Graph = () => {
                         </div>
                     </div>
                 </div>
-                <div className='Month'>
-                    <h5>Jan</h5>
-                    <h5>Feb</h5>
-                    <h5>March</h5>
-                    <h5>April</h5>
-                    <h5>May</h5>
-                    <h5>Jun</h5>
-                </div>
+                
                 <div className="graph">
-                    <img src="/assets/bigGraph.svg" alt=""/>
+                   <Bigchart/>
+
                 </div>
             </div>
             <div className='progressSect'>
