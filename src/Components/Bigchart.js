@@ -10,7 +10,8 @@ const Bigchart = () => {
                lineTension: 0.2,
                 borderWidth: 1,
                 borderColor: '#0294FF',
-                data: [57, 60, 88, 100, 120, 70]
+                data: [57, 60, 88, 100, 120, 70],
+                backgroundColor: 'linear-gradient(180deg, rgba(2, 148, 255, 0.45) 33.13%, rgba(255, 255, 255, 0.0001) 117.06%)'
             }
         ]
     }
