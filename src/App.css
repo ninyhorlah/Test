@@ -503,7 +503,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 968px) {
+/* @media screen and (max-width: 968px) {
   .sideNav {
     display: block;
     width: 70%;
@@ -570,7 +570,7 @@ body {
   .Toggle {
     display: block;
   }
-}
+} */
 
 /* @media screen and (max-width: 886px) {
   .search,
