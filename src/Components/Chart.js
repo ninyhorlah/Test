@@ -10,7 +10,8 @@ const Chart = () => {
                lineTension: 0.2,
                 borderWidth: 1,
                 borderColor: '#0294FF',
-                data: [27, 26, 28, 27, 30]
+                data: [27, 26, 28, 27, 30],
+                backgroundColor: 'rgba(2, 148, 255, 0.2)'
             }
         ]
     }
