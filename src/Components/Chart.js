@@ -3,17 +3,11 @@ import { Line } from 'react-chartjs-2';
 
 
 const Chart = () => {
-    
-    
     const state = {
         labels: ['', '', '', '', ''],
         datasets: [
             {
-                
-                // fill: true,
-                
-                lineTension: 0.2,
-                backgroundColor: '',
+               lineTension: 0.2,
                 borderWidth: 1,
                 borderColor: '#0294FF',
                 data: [27, 26, 28, 27, 30]
@@ -28,13 +22,17 @@ const Chart = () => {
                 height='80px'
                 width='70px'
                 options={{
+                    responsive: true,
                     maintainAspectRatio: false,
                     elements: {
                         line: {
                             tension: 0
+                        },
+                        point: {
+                            radius: 0
                         }
                     },
-                    fillColor: 'linear-gradient(180deg, rgba(2, 148, 255, 0.126274) 33.13%, rgba(255, 255, 255, 0.0001) 117.06%)',
+                    // fillColor: 'linear-gradient(180deg, rgba(2, 148, 255, 0.126274) 33.13%, rgba(255, 255, 255, 0.0001) 117.06%)',
                     scales: {
                         xAxes: [{
                             gridLines: {

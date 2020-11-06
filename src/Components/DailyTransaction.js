@@ -11,7 +11,7 @@ const DailyTransaction = () => {
                         <p>2,342</p>
                     </div>
                     <div>
-                        <img src="/assets/smallChart.svg" alt=""/>
+                        <Chart/>
                     </div>
                 </div>
                 <div className='Daily'>
@@ -31,7 +31,7 @@ const DailyTransaction = () => {
                         <p>452,000</p>
                     </div>
                     <div>
-                        <img src="/assets/smallChart.svg" alt=""/>
+                        <Chart/>
                     </div>
                 </div>
                 <div className='Total'>
@@ -40,7 +40,7 @@ const DailyTransaction = () => {
                         <p>&#x20A6; 4,000,000</p>
                     </div>
                     <div>
-                        <img src="/assets/smallChart.svg" alt=""/>
+                        <Chart/>
                     </div>
                 </div>
             </div>
