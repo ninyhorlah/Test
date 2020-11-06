@@ -1,21 +1,21 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faBell} from '@fortawesome/free-regular-svg-icons'
-import SideNavigation from './SideNav'
-import Toggleicon from './Toggleicon'
+// import SideNavigation from './SideNav'
+// import Toggleicon from './Toggleicon'
 
 const TopNav = () => {
 
-    const [SideNav, setSideNav ] = useState(false)
+    // const [SideNav, setSideNav ] = useState(false)
 
-    let menu;
+    // let menu;
 
-    if(SideNav){
-        menu = <div className='showToggle'>
-            <SideNavigation/>
-        </div>
-    }
+    // if(SideNav){
+    //     menu = <div className='showToggle'>
+    //         <SideNavigation/>
+    //     </div>
+    // }
     return (
         <div className='TopNav'>
             <div className='LogoSection'>
@@ -45,14 +45,14 @@ const TopNav = () => {
                     <div>
                         <img src='/assets/img.svg' alt=""/>
                     </div>
-                    <div onClick={() => setSideNav(!SideNav)}>
+                    {/* <div onClick={() => setSideNav(!SideNav)}>
                         <Toggleicon/>
-                    </div>
+                    </div> */}
                     
                     
                     
                 </div>
-                {menu}
+                {/* {menu} */}
             </div>
             
         </div>
